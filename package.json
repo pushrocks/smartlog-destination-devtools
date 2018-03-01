@@ -1,0 +1,19 @@
+{
+  "name": "beautybrowser",
+  "version": "1.0.1",
+  "description": "beautiful logging for the browser",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "scripts": {
+    "test": "(npmts)",
+    "format": "(gitzone format)"
+  },
+  "devDependencies": {
+    "tapbundle": "^2.0.0"
+  },
+  "dependencies": {
+    "smartlog-interfaces": "^1.0.8"
+  }
+}
