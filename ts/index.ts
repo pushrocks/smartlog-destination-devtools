@@ -17,7 +17,7 @@ export class BeautyBrowser implements ILogDestination {
   private parseLog = (stringToParseArg: string): IBeautyLogObject => {
     const parseLogRegex = /^(success|ok|info|warn|error):\s(.*)/;
     const regexResult = parseLogRegex.exec(stringToParseArg);
-    if(regexResult.length === 3) {
+    if(regexResult && regexResult.length === 3) {
       return {
         logType: regexResult[1],
         logString: regexResult[2]
