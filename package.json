@@ -1,6 +1,6 @@
 {
   "name": "beautybrowser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "beautiful logging for the browser",
   "main": "dist/index.js",
