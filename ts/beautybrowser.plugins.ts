@@ -1,2 +1,2 @@
-import * as smartlogInterfaces from 'smartlog-interfaces';
+import * as smartlogInterfaces from '@pushrocks/smartlog-interfaces';
 export { smartlogInterfaces };
