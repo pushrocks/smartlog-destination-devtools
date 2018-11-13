@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:chownr:20180731':
+    - chokidar > fsevents > node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2018-12-13T00:39:40.332Z'
+    - fswatcher-child > chokidar > fsevents > node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2018-12-13T00:39:40.332Z'
+    - parcel-bundler > fswatcher-child > chokidar > fsevents > node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2018-12-13T00:39:40.332Z'
+patch: {}
