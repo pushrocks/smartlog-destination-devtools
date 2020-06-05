@@ -29,7 +29,11 @@ tap.test('should log a normal message', async () => {
     type: 'log',
     context: logContext,
     level: 'info',
-    message: 'wait, what? Hi, this is a message!'
+    message: 'wait, what? Hi, this is a message!',
+    correlation: {
+      id: '123',
+      type: 'none'
+    }
   });
 });
 
@@ -39,7 +43,11 @@ tap.test('should log a success message', async () => {
     context: logContext,
     type: 'log',
     level: 'info',
-    message: 'success: Hi, this is a message!'
+    message: 'success: Hi, this is a message!',
+    correlation: {
+      id: '123',
+      type: 'none'
+    }
   });
 });
 
