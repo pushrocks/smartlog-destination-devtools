@@ -24,5 +24,20 @@
   },
   "dependencies": {
     "@pushrocks/smartlog-interfaces": "^2.0.20"
-  }
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "files": [
+    "ts/**/*",
+    "ts_web/**/*",
+    "dist/**/*",
+    "dist_*/**/*",
+    "dist_ts/**/*",
+    "dist_ts_web/**/*",
+    "assets/**/*",
+    "cli.js",
+    "npmextra.json",
+    "readme.md"
+  ]
 }

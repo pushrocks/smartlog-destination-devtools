@@ -1,7 +1,6 @@
 import * as plugins from './beautybrowser.plugins';
 import { ILogDestination, ILogPackage } from '@pushrocks/smartlog-interfaces';
 
-
 export class SmartlogDestinationDevtools implements ILogDestination {
   public async handleLog(logPackageArg: ILogPackage) {
     await this.logInBrowser(logPackageArg);

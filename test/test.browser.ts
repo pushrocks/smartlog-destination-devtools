@@ -10,11 +10,11 @@ const logContext: ILogContext = {
   containerName: 'testContainer',
   environment: 'staging',
   runtime: 'chrome',
-  zone: 'servezone'
+  zone: 'servezone',
 };
 
 const logger = new smartlog.Smartlog({
-  logContext
+  logContext,
 });
 
 // import the module to test
@@ -35,8 +35,8 @@ tap.test('should log a normal message', async () => {
     message: 'wait, what? Hi, this is a message!',
     correlation: {
       id: '123',
-      type: 'none'
-    }
+      type: 'none',
+    },
   });
 });
 
@@ -49,8 +49,8 @@ tap.test('should log a success message', async () => {
     message: 'success: Hi, this is a message!',
     correlation: {
       id: '123',
-      type: 'none'
-    }
+      type: 'none',
+    },
   });
 });
 
