@@ -3,11 +3,11 @@ import { ILogDestination, ILogPackage } from '@pushrocks/smartlog-interfaces';
 
 
 export class SmartlogDestinationDevtools implements ILogDestination {
-  public handleLog(logPackageArg: ILogPackage) {
-    this.logInBrowser(logPackageArg);
+  public async handleLog(logPackageArg: ILogPackage) {
+    await this.logInBrowser(logPackageArg);
   }
 
-  private logInBrowser(logPackage: ILogPackage) {
+  private async logInBrowser(logPackage: ILogPackage) {
     switch (logPackage.level) {
       case 'error':
         console.log(

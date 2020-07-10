@@ -4,7 +4,6 @@ import { expect, tap } from '@pushrocks/tapbundle';
 import { ILogContext } from '@pushrocks/smartlog-interfaces';
 import * as smartlog from '@pushrocks/smartlog';
 
-const logger = smartlog.defaultLogger;
 const logContext: ILogContext = {
   company: 'Lossless GmbH',
   companyunit: 'Lossless.Cloud',
@@ -13,6 +12,10 @@ const logContext: ILogContext = {
   runtime: 'chrome',
   zone: 'servezone'
 };
+
+const logger = new smartlog.Smartlog({
+  logContext
+});
 
 // import the module to test
 import * as smartlogDestinationDevtools from '../ts/index';

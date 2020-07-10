@@ -8,21 +8,21 @@
   "author": "Lossless GmbH",
   "license": "MIT",
   "scripts": {
-    "test": "(tstest test/)",
+    "test": "(tstest test/ --web)",
     "testBrowser": "(parcel ./test/index.html)",
-    "build": "(tsbuild)"
+    "build": "(tsbuild --web)"
   },
   "devDependencies": {
     "@gitzone/tsbuild": "^2.1.24",
-    "@gitzone/tstest": "^1.0.33",
-    "@pushrocks/smartlog": "^2.0.21",
-    "@pushrocks/tapbundle": "^3.2.1",
-    "@types/node": "^14.0.11",
+    "@gitzone/tstest": "^1.0.40",
+    "@pushrocks/smartlog": "^2.0.35",
+    "@pushrocks/tapbundle": "^3.2.7",
+    "@types/node": "^14.0.20",
     "parcel-bundler": "^1.12.4",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0"
   },
   "dependencies": {
-    "@pushrocks/smartlog-interfaces": "^2.0.15"
+    "@pushrocks/smartlog-interfaces": "^2.0.20"
   }
 }
